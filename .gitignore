@@ -1,0 +1,12 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary test files
+oom-pod.yaml
+
+# OS files
+.DS_Store
+Thumbs.db

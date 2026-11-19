@@ -1,0 +1,17 @@
+# Lightweight configuration for local development
+prometheus:
+  prometheusSpec:
+    retention: 2h
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "256Mi"
+      limits:
+        cpu: "500m"
+        memory: "512Mi"
+
+# Enable Grafana with default admin password 'admin'
+grafana:
+  adminPassword: "admin"
+  service:
+    type: ClusterIP
